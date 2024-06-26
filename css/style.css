@@ -331,8 +331,15 @@ footer {
   padding: 1rem;
   position: fixed;
   width: 100%;
+  height: 1%;
   bottom: 0;
   animation: slideInFromBottom 1.2s ease-out;
+}
+
+footer p{
+  color: white;
+  bottom: 18px;
+  position: relative;
 }
 
 .btn {
