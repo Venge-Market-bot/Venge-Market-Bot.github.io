@@ -1,0 +1,77 @@
+/* ----------------C E N T E R--P A R T---------------- */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("../assets/backgrounds/backround.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #4d43ab;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150;
+  height: 150%;
+  background: #f700ff1f; /*filter*/
+  z-index: -1; /* Ensure it stays behind other elements */
+  pointer-events: none; /* Ensure it doesn't interfere with user interactions */
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  font-family: "MuseoModerno-Light", sans-serif;
+  font-size: 1.5rem; /* Increase font size */
+  animation: pinkGlow 1.5s infinite alternate; /* Add animation */
+  position: relative;
+  left: 300x; /* Position for text */
+  font-weight: bold;
+}
+
+.transparent-box {
+  position: fixed; /* Fixed positioning */
+  top: 50%; /* Center vertically */
+  right: 30px; /* Align to the right */
+  transform: translateY(-50%); /* Center vertically with transform */
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.808);
+  border-radius: 15px;
+  box-shadow: 0 0 10px #ea00ff;
+  color: rgb(255, 255, 255); /* Text in box color */
+  padding: 20px;
+  box-sizing: border-box;
+  animation: fadeInSlideIn 0.8s ease-in-out;
+  font-family: "MuseoModerno-Light", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.transparent-box p {
+  margin: 0;
+}
+
+:root {
+  --box-width: 60%;
+  --box-height: auto;
+}
+
+.curved-box {
+  background-color: rgba(0, 0, 0, 0.808);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  width: var(--box-width);
+  height: var(--box-height);
+  box-shadow: 0 0 10px #ea00ff;
+  animation: boxTextAnimation 0.8s ease-in-out;
+}

@@ -1,0 +1,105 @@
+/* ----------------A N I M A T I O N S---------------- */
+
+:root {
+  --glow-intensity-start: 4px;
+  --glow-intensity-end: 6px;
+}
+
+@keyframes pinkGlow {
+  0% {
+    text-shadow: 0 0 var(--glow-intensity-start) #f500fd,
+      0 0 calc(var(--glow-intensity-start) * 2) #f500fd,
+      0 0 calc(var(--glow-intensity-start) * 3) #f500fd,
+      0 0 calc(var(--glow-intensity-start) * 4) #f500fd;
+  }
+  100% {
+    text-shadow: 0 0 var(--glow-intensity-end) #d300fd,
+      0 0 calc(var(--glow-intensity-end) * 2) #d300fd,
+      0 0 calc(var(--glow-intensity-end) * 3) #d300fd,
+      0 0 calc(var(--glow-intensity-end) * 4) #d300fd;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-170%) translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+@keyframes boxTextAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-170%) translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%) translateX(0);
+  }
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-135rem);
+  }
+}
+
+@keyframes animStarRotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes gradient_301 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse_3011 {
+  0% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}

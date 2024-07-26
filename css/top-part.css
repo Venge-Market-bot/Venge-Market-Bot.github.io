@@ -1,0 +1,90 @@
+/* ----------------T O P--P A R t---------------- */
+
+:root {
+  --blur: blur(16px);
+  --glass: rgba(49, 2, 53, 0.55);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: var(--blur);
+  background-color: var(--glass);
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  text-align: center;
+  font-family: "Betatron", monospace;
+  animation: slideInFromTop 1s ease-out;
+}
+
+.circular-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  box-shadow: 0 0 40px rgb(247, 0, 200);
+}
+
+h1 {
+  /* big text next to logo */
+  margin: 0;
+  position: absolute; /* Use absolute positioning */
+  top: 10; /* Align to the top of the page */
+  left: 80px; /* Align to the left of the page */
+}
+
+.nav-toggle {
+  display: none; /* Hide toggle button by default */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+nav ul {
+  position: absolute;
+  list-style-type: none;
+  padding-right: 0px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  bottom: 20px; /* Align to the top of the page */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust position to truly center */
+  font-family: "Poppins-Bold", monospace;
+  gap: 30px;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  transition: transform 0.3s, font-size 0.2s; /* Smooth transition for hover effects */
+}
+
+nav ul li a img.icon {
+  margin-right: 8px; /* space between icon and text */
+  width: 20px; /* icon width */
+  height: 20px; /* icon height */
+}
+
+nav ul li a:hover {
+  transform: scale(1.1) rotate(5deg);
+  font-size: 1.1em; /* Increase font size slightly */
+}
