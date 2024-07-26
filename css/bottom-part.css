@@ -42,8 +42,9 @@
   bottom: 20px; /* Align slightly above the bottom of the page */
   left: 65%; /* Center horizontally */
   transform: translateX(-50%); /* Adjust position to truly center */
-  font-family: "Poppins-Bold", monospace;
-  gap: 40px;
+  font-family: "MPLUSCodeLatin", monospace;
+  letter-spacing: 1px;
+  gap: 30px;
   width: max-content;
 }
 
