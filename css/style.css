@@ -179,7 +179,7 @@ strong {
   }
 
   .circular-image {
-    margin: 0 auto 1rem auto;
+    display: none;
   }
 
   nav ul {
@@ -242,11 +242,34 @@ strong {
     left: 0px;
   }
 
-  footer {
-    text-align: center;
-    padding: 0rem;
-    position: relative;
-    width: 0%;
+  .bottom-part {
+    flex-direction: row; 
+    align-items: center; 
+    text-align: center; 
+    height: 250px;
+  }
+
+  .bottom-part .icon-container .circular-image {
+    display: none;
+  }
+
+  .links-container {
+    flex: none; /* Remove flex-grow */
+    width: 100%; /* Make it full width */
+    margin-top: 1rem; /* Add margin for spacing */
+    text-align: center; /* Center text alignment */
+  }
+
+  .links-container ul {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 10px; /* Adjust gap for vertical spacing */
+    margin: 0; /* Remove default margin */
+  }
+
+  .links-container ul li {
+    display: block; /* Ensure each link takes full width */
   }
 
   :root {
