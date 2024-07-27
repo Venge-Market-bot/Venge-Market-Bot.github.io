@@ -249,8 +249,8 @@ strong {
     height: 250px;
   }
 
-  .bottom-part .icon-container .circular-image {
-    display: none;
+  .circular-icon {
+    display: block;
   }
 
   .links-container {
