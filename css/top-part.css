@@ -34,14 +34,6 @@ header {
   box-shadow: 0 0 40px rgb(247, 0, 200);
 }
 
-h1 {
-  /* big text next to logo */
-  margin: 0;
-  /* position: absolute; Use absolute positioning */
-  /* top: 10; Align to the top of the page */
-  /* left: 80px; Align to the left of the page */
-}
-
 .nav-toggle {
   display: none; /* Hide toggle button by default */
   position: absolute;
@@ -95,6 +87,7 @@ nav ul li:not(:last-child) a:hover {
   transform: scale(1.1) rotate(5deg);
   font-size: 1.1em; /* Increase font size slightly */
 }
+
 .add-bot-btn a {
   display: flex;
   align-items: center;
@@ -118,11 +111,10 @@ nav ul li:not(:last-child) a:hover {
 
 .add-bot-btn a:hover {
   width: 220px; /* Increase width on hover */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Box shadow effect */
+  box-shadow: 0 0 15px black; /* Box shadow effect */
 }
 
 .add-bot-btn a:hover span.full-bot-name {
   display: inline; /* Show the full bot name on hover */
   margin: 0 5px; /* Optional: Add a little space between "Add" and the full bot name */
 }
-
