@@ -1,21 +1,22 @@
 /* Default styles for larger screens */
 @media (min-width: 600px) {
-    nav ul {
-        flex-direction: row;
-    }
+  nav ul {
+    flex-direction: row;
+  }
 
-    main {
-        text-align: left;
-    }
+  main {
+    text-align: left;
+  }
 }
 
 /* Styles for smaller screens */
 @media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
+  nav ul {
+    flex-direction: column;
+  }
 
-    header, footer {
-        text-align: left;
-    }
+  header,
+  footer {
+    text-align: left;
+  }
 }
