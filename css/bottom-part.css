@@ -5,69 +5,50 @@
   --glass: rgba(49, 2, 53, 0.55);
 }
 
+
 .bottom-part {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   backdrop-filter: var(--blur);
   background-color: var(--glass);
   color: rgb(255, 255, 255);
-  padding: 1rem;
-}
-
-footer,
-.bottom-part {
-  background: var(--glass); /* Ensure it matches the rest of the design */
-  padding: 1rem;
   text-align: center;
-  width: 100%;
+  width: 95%;
+  height: min-content;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  padding: 0 1rem;
 }
 
-.circular-icon {
-  width: 50px;
-  height: auto;
-  border-radius: 50%;
-  box-shadow: 0 0 40px rgb(247, 0, 200);
-}
 
 .links-container {
-  flex: 3;
-  text-align: right;
-}
-
-.links-container ul {
-  position: absolute;
+  /* position: absolute; */
   list-style-type: none;
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin: 0;
-  bottom: 20px; /* Align slightly above the bottom of the page */
-  left: 65%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust position to truly center */
-  font-family: "MPLUSCodeLatin", monospace;
-  letter-spacing: 1px;
-  gap: 30px;
-  width: max-content;
+  font-family: "Poppins-Bold", monospace;
+  gap: 20px;
 }
 
 .links-container a {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-weight: bold;
 }
 
-.links-container ul li {
+.links-container li {
   display: inline-block;
 }
 
-.links-container ul li a {
+.links-container li a {
   display: flex;
   align-items: center;
   padding: 10px;
   text-decoration: none;
 }
 
-.links-container ul li a:hover {
+.links-container li a:hover {
   text-decoration: underline;
 }
