@@ -10,14 +10,18 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 95%;
+  height: 3rem;
   backdrop-filter: var(--blur);
   background-color: var(--glass);
   color: rgb(255, 255, 255);
   padding: 1rem;
+  margin: 1rem;
+  border: 3px solid rgba(208, 0, 255, 0.868);
+  border-radius: 20px;
   text-align: center;
   font-family: "Betatron", monospace;
   animation: slideInFromTop 0.6s ease-out;
-  width: 100%;
 }
 
 .bot-icon-name {
@@ -30,8 +34,8 @@ header {
   width: 50px;
   height: auto;
   border-radius: 50%;
-  margin-right: 20px;
-  box-shadow: 0 0 40px rgb(247, 0, 200);
+  margin: 20px;
+  box-shadow: 0 0 10px rgb(247, 0, 200);
 }
 
 .nav-toggle {
@@ -53,16 +57,9 @@ nav ul {
   justify-content: center;
   gap: 20px;
   list-style-type: none;
-  padding-right: 0px;
   width: 100%;
   transform: translateX(-10%); /* Adjust position to truly center */
-  font-family: "Poppins-Bold", monospace;
-}
-
-nav a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-weight: bold;
+  font-family: "RussoOne", monospace;
 }
 
 nav ul li {
@@ -72,9 +69,10 @@ nav ul li {
 nav ul li a {
   display: flex;
   align-items: center;
+  color: rgb(255, 255, 255);
   padding: 10px;
   text-decoration: none;
-  transition: transform 0.3s, font-size 0.2s; /* Smooth transition for hover effects */
+  transition: transform 0.2s; /* Smooth transition for hover effects */
 }
 
 nav ul li a img.icon {
@@ -84,8 +82,7 @@ nav ul li a img.icon {
 }
 
 nav ul li:not(:last-child) a:hover {
-  transform: scale(1.1) rotate(5deg);
-  font-size: 1.1em; /* Increase font size slightly */
+  transform: scale(1.3) rotate(5deg);
 }
 
 .add-bot-btn a {
@@ -97,24 +94,13 @@ nav ul li:not(:last-child) a:hover {
   padding: 0.6rem;
   color: black;
   background-color: aliceblue;
-  border-radius: 50px;
+  border-radius: 10px;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Initial box-shadow state */
-  transition: width 0.5s, box-shadow 0.8s; /* Define the properties to transition and the duration */
   overflow: hidden; /* Hide the overflow content */
   white-space: nowrap; /* Prevent text wrapping */
 }
 
-.add-bot-btn a span.full-bot-name {
-  display: none; /* Initially hide the full bot name */
-  transition: opacity 0.8s;
-}
-
 .add-bot-btn a:hover {
-  width: 220px; /* Increase width on hover */
-  box-shadow: 0 0 15px black; /* Box shadow effect */
-}
-
-.add-bot-btn a:hover span.full-bot-name {
-  display: inline; /* Show the full bot name on hover */
-  margin: 0 5px; /* Optional: Add a little space between "Add" and the full bot name */
+  background-color: rgb(216, 100, 242);
+  box-shadow: 0 0 20rgb (174, 178, 180); /* Box shadow effect */
 }
