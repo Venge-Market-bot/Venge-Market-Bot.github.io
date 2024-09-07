@@ -1,7 +1,6 @@
 <div align='center'>
 
-<img src=https://venge-market-bot.github.io/assets/icons/Icon.jpg alt="logo" width=100 height=100 />
-
+<img src=https://github.com/Venge-Market-bot/Venge-Market-Bot.github.io/blob/main/assets/icons/Icon-modified.png alt="logo" width=100 height=100 />
 <h1>Market Navigator Bot</h1>
 <p>Welcome to Market Navigator Bot. Designed exclusively for Venge.io enthusiasts! Developed collaboratively by Dry Cloud, Alex, and BalencedVeil717, our bot is your companion for navigating the Venge.io market with ease. Whether you are new to market or an experienced eye, our bot simplifies your purchasing experience.</p>
 
