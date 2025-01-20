@@ -1,5 +1,3 @@
-/* ----------------B O T T O M--P A R T---------------- */
-
 :root {
   --blur: blur(16px);
   --glass: rgba(49, 2, 53, 0.55);
@@ -22,7 +20,6 @@
 }
 
 .links-container {
-  /* position: absolute; */
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -49,4 +46,23 @@
 
 .links-container li a:hover {
   text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .bottom-part {
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .links-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .links-container li {
+    display: block;
+  }
 }
