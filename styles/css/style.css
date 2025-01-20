@@ -3,14 +3,14 @@
 /* top left logo */
 @font-face {
   font-family: "Betatron";
-  src: url("../assets/fonts/Betatron-Regular.otf") format("opentype");
+  src: url("../../fonts/Betatron-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 /* top right options */
 @font-face {
   font-family: "RussoOne";
-  src: url("../assets/fonts/RussoOne-Regular.ttf") format("truetype");
+  src: url("../../fonts/RussoOne-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -18,7 +18,7 @@
 /* desc (pink text)*/
 @font-face {
   font-family: "MuseoModerno-Light";
-  src: url("../assets/fonts/MuseoModerno-Light.ttf") format("truetype");
+  src: url("../../fonts/MuseoModerno-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -26,7 +26,7 @@
 /* nav[mobile] | bottom */
 @font-face {
   font-family: "Poppins-Bold";
-  src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
+  src: url("../../fonts/Poppins-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

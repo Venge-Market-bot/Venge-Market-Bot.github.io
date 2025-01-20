@@ -150,7 +150,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url("../assets/backgrounds/background.jpg");
+    background-image: url("../../assets/images/backgrounds/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;

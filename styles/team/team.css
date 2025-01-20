@@ -11,7 +11,7 @@ body {
   background-color: #4d43ab;
   overflow-x: hidden;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +57,7 @@ main {
 .profile-box {
   display: flex;
   align-items: center;
-  background-color: #252323; /* Background color for the box */
+  background-color: #14142c; /* Background color for the box */
   padding: 15px; /* Padding inside the box */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -120,7 +120,7 @@ main {
 }
 .heading {
   font-family: "Betatron", monospace;
-  font-size: 5rem;
+  font-size: 3rem;
   letter-spacing: 2rem;
   margin: 2rem 0;
   padding: 0;
