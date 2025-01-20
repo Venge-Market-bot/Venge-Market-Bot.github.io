@@ -42,7 +42,7 @@ header {
   display: none; /* Hide toggle button by default */
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: -50px;
   font-size: 24px;
   background: none;
   border: none;
