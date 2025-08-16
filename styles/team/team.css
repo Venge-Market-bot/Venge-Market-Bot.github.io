@@ -1,133 +1,146 @@
 /* ----------------C E N T E R--P A R T---------------- */
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-image: url("./background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #4d43ab;
-  overflow-x: hidden;
-  position: relative;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("./background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #4d43ab;
+    overflow-x: hidden;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f700ff1f; /* filter */
-  z-index: -1; /* Ensure it stays behind other elements */
-  pointer-events: none; /* Ensure it doesn't interfere with user interactions */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f700ff1f;
+    /* filter */
+    z-index: -1;
+    /* Ensure it stays behind other elements */
+    pointer-events: none;
+    /* Ensure it doesn't interfere with user interactions */
 }
 
 main {
-  padding: 2rem;
-  text-align: center;
-  color: white;
-  font-family: "Poppins-Bold", sans-serif;
-  font-size: 1.5rem; /* Increase font size */
-  position: relative;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    font-family: "Poppins-Bold", sans-serif;
+    font-size: 1.5rem;
+    /* Increase font size */
+    position: relative;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .profile-container {
-  display: flex;
-  justify-content: space-between; /* Ensure the boxes are evenly spaced */
-  gap: 20px; /* Add spacing between boxes */
-  padding: 20px; /* Padding around the entire container */
-  width: 100%; /* Make sure the container takes full width */
-  max-width: 1200px; /* Optional: Limit the maximum width of the container */
-  align-items: stretch; /* Stretch all boxes to the height of the tallest one */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .profile-box {
-  display: flex;
-  align-items: center;
-  background-color: #14142c; /* Background color for the box */
-  padding: 15px; /* Padding inside the box */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  flex: 1; /* Allow the boxes to grow and shrink equally */
-  max-width: none; /* Remove max-width to allow full stretching */
+    min-width: 18%;
+    background-color: #14142c;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 13, 255), 0 0 30px rgba(36, 74, 244, 0.5);
+    text-align: center;
 }
 
 .profile-image img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%; /* Circular profile image */
-  margin-right: 15px; /* Space between image and text */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .profile-details {
-  display: flex;
-  flex-direction: column; /* Stack name and position vertically */
-  overflow: hidden; /* Hide any overflow text */
-  text-overflow: ellipsis; /* Add ellipsis (...) for overflowing text */
-  white-space: nowrap; /* Prevent text from wrapping to the next line */
-  width: 100%; /* Ensure details section fills the remaining space */
+    display: flex;
+    flex-direction: column;
+    /* Stack name and position vertically */
+    overflow: hidden;
+    /* Hide any overflow text */
+    text-overflow: ellipsis;
+    /* Add ellipsis (...) for overflowing text */
+    white-space: nowrap;
+    /* Prevent text from wrapping to the next line */
+    width: 100%;
+    /* Ensure details section fills the remaining space */
 }
 
 .profile-name {
-  font-size: 1.5rem; /* Large font for the name */
-  font-weight: bold;
-  margin: 0; /* Remove default margin */
+    font-size: 1.5rem;
+    /* Large font for the name */
+    font-weight: bold;
+    margin: 0;
+    /* Remove default margin */
 }
 
 .profile-position {
-  font-size: 1rem; /* Smaller font for the position */
-  color: #ba9c9c; /* Gray color for the position text */
-  margin: 5px 0 0 0; /* Space between name and position */
+    font-size: 1rem;
+    /* Smaller font for the position */
+    color: #ba9c9c;
+    /* Gray color for the position text */
+    margin: 5px 0 0 0;
+    /* Space between name and position */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .profile-container {
-    flex-direction: column; /* Stack boxes vertically on smaller screens */
-  }
+    .profile-container {
+        grid-template-columns: 1fr;
+    }
 
-  .profile-box {
-    width: 100%; /* Full width on smaller screens */
-    margin-bottom: 20px; /* Space between stacked boxes */
-    max-width: 100%; /* Ensure full width on smaller screens */
-  }
+    .profile-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 .section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: space-evenly;
-  margin: 1rem 0;
-  padding: 1rem;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.849);
-  border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.849);
+    border-radius: 10px;
 }
+
 .heading {
-  font-family: "Betatron", monospace;
-  font-size: 3rem;
-  letter-spacing: 2rem;
-  margin: 2rem 0;
-  padding: 0;
-  text-shadow: 1px 1px hsl(0, 0%, 0%), 1px 1px hsl(265, 87%, 75%),
-    2px 2px hsl(265, 87%, 70%), 3px 3px hsl(0, 0%, 0%),
-    4px 4px hsl(265, 87%, 60%), 5px 5px hsl(265, 87%, 55%),
-    6px 6px hsl(0, 0%, 0%), 7px 7px hsl(265, 87%, 45%),
-    8px 8px hsl(265, 87%, 40%), 9px 9px hsl(0, 0%, 0%),
-    10px 10px hsl(265, 87%, 30%), 10px 10px 30px rgba(0, 0, 0, 0.7);
+    font-family: "Betatron", monospace;
+    font-size: 3rem;
+    letter-spacing: 2rem;
+    margin: 2rem 0;
+    padding: 0;
+    text-shadow: 1px 1px hsl(0, 0%, 0%), 1px 1px hsl(265, 87%, 75%),
+        2px 2px hsl(265, 87%, 70%), 3px 3px hsl(0, 0%, 0%),
+        4px 4px hsl(265, 87%, 60%), 5px 5px hsl(265, 87%, 55%),
+        6px 6px hsl(0, 0%, 0%), 7px 7px hsl(265, 87%, 45%),
+        8px 8px hsl(265, 87%, 40%), 9px 9px hsl(0, 0%, 0%),
+        10px 10px hsl(265, 87%, 30%), 10px 10px 30px rgba(0, 0, 0, 0.7);
 }

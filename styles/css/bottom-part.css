@@ -13,6 +13,8 @@
   color: rgb(255, 255, 255);
   text-align: center;
   width: 95%;
+    border: 3px solid rgba(208, 0, 255, 0.868);
+
   height: min-content;
   margin-bottom: 1rem;
   border-radius: 20px;
