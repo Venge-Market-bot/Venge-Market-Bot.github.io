@@ -30,6 +30,19 @@ body::before {
   pointer-events: none; /* Ensure it doesn't interfere with user interactions */
 }
 
+.content-frame {
+  flex: 1; /* take available space between header and footer */
+  width: 80%; /* adjust as needed */
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 3px solid rgba(208, 0, 255, 0.868);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  overflow: hidden; /* keep content inside */
+}
+
 main {
   padding: 2rem;
   color: white;
@@ -44,7 +57,7 @@ main {
 }
 
 .transparent-box {
-  position: fixed; /* Fixed positioning */
+  /* position: fixed; Fixed positioning */
   top: 50%; /* Center vertically */
   right: 30px; /* Align to the right */
   transform: translateY(-50%); /* Center vertically with transform */
