@@ -23,121 +23,120 @@
     <link rel="stylesheet" href="./styles/css/responsive.css" />
     <link rel="stylesheet" href="./styles/css/style.css" />
     <link rel="stylesheet" href="./styles/css/mobile-layout.css" /> -->
-    <link rel="stylesheet" href="./new.css"/>
+    <meta name="color-scheme" content="light">
+    <link rel="stylesheet" href="./assets/css/main.css"/>
 </head>
 
-<body>
+<body class="page-body">
 <!-- ----------------T O P--P A R T---------------- -->
 
-<header>
-    <div class="bot-icon-name">
-        <img
-                src="./assets/others/Icon.jpg"
-                alt="Market Navigator Bot"
-                class="circular-image"
-        />
-        <h1>Market Navigator Bot</h1>
-    </div>
+<div class="page">
+    <header class="header">
+        <div class="header__brand">
+            <img
+                    src="./assets/others/Icon.jpg"
+                    alt="Market Navigator Bot"
+                    class="header__brand-image"
+            />
+            <h1>Market Navigator Bot</h1>
+        </div>
 
-    <!-- <button class="nav-toggle">☰</button> -->
-    <ul class="nav-menu">
-        <li>
-            <a href="./index.html"> About</a>
-        </li>
-        <li>
-            <a href="./pages/features.html"> Features</a>
-        </li>
-        <li>
-            <a href="./pages/contact.html"> Contact</a>
-        </li>
-        <li>
-            <a href="./pages/team.html"> Team</a>
-        </li>
-        <li>
-            <a href="./pages/status.html"> Status</a>
-        </li>
-        <li class="add-bot-btn">
-            <a
-                    href="https://discord.com/oauth2/authorize?client_id=1220812690943901766&permissions=1015760145472&scope=bot"
-            >
-                Add Bot</a
-            >
-        </li>
-    </ul>
-</header>
-
-<!-- ----------------C E N T E R--P A R T---------------- -->
-<main>
-    <div id="ServerJoinNews" class="transparent-box curved-box">
-        <h2>Add Bot</h2>
-        <p>
-            The Market Bot is added to the official Venge server and many other
-            servers. The project started on 03/05/2024 and was added to Venge on
-            14/05/2024. Add the bot by clicking the button below!
-        </p>
-        <a
-                class="btn"
-                href="https://discord.com/oauth2/authorize?client_id=1220812690943901766&permissions=1015760145472&scope=bot"
-                target="_blank"
+        <!-- <button class="header__nav-toggle">☰</button> -->
+        <ul class="nav-menu header__nav-menu">
+            <li class="nav-menu__item">
+                <a class="nav-menu__link" href="./index.html"> About</a>
+            </li>
+            <li class="nav-menu__item">
+                <a class="nav-menu__link" href="./pages/features.html"> Features</a>
+            </li>
+            <li class="nav-menu__item">
+                <a class="nav-menu__link" href="./pages/contact.html"> Contact</a>
+            </li>
+            <li class="nav-menu__item">
+                <a class="nav-menu__link" href="./pages/team.html"> Team</a>
+            </li>
+            <li class="nav-menu__item">
+                <a class="nav-menu__link" href="./pages/status.html"> Status</a>
+            </li>
+        </ul>
+        <a class="button button--primary header__cta"
+           href="https://discord.com/oauth2/authorize?client_id=1220812690943901766&permissions=1015760145472&scope=bot"
         >
-            <strong>ADD BOT</strong>
-            <div id="container-stars">
-                <div id="stars"></div>
-            </div>
-            <div id="glow">
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-        </a>
-    </div>
-    <div id="home" class="curved-box">
-        <h2>Welcome</h2>
-        <p>
-            Welcome to Market Navigator Bot! Designed exclusively for Venge.io
-            enthusiasts!<br/>
-            Developed collaboratively by Dry Cloud, Alex, and BalencedVeil717, our
-            bot is your companion for navigating the Venge.io market with ease.
-            <br/>
-            Whether you are new to the market or an experienced eye, our bot
-            simplifies your purchasing experience.
-        </p>
-    </div>
-    <div id="MarketNavigatorBot" class="curved-box">
-        <h2>Market Navigator Bot</h2>
-        <p>
-            Explore the features and benefits that<br/>make this bot
-            indispensable for Venge.io players.
-        </p>
-    </div>
-</main>
+            Add Bot</a>
+    </header>
 
-<!-- ----------------B O T T O M--P A R T---------------- -->
+    <!-- ----------------C E N T E R--P A R T---------------- -->
+    <main class="main">
+        <div id="ServerJoinNews" class="card card--transparent">
+            <h2>Add Bot</h2>
+            <p>
+                The Market Bot is added to the official Venge server and many other
+                servers. The project started on 03/05/2024 and was added to Venge on
+                14/05/2024. Add the bot by clicking the button below!
+            </p>
+            <a
+                    class="btn"
+                    href="https://discord.com/oauth2/authorize?client_id=1220812690943901766&permissions=1015760145472&scope=bot"
+                    target="_blank"
+            >
+                <strong>ADD BOT</strong>
+                <div id="container-stars">
+                    <div id="stars"></div>
+                </div>
+                <div id="glow">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </a>
+        </div>
+        <div id="home" class="card">
+            <h2>Welcome</h2>
+            <p>
+                Welcome to Market Navigator Bot! Designed exclusively for Venge.io
+                enthusiasts!<br/>
+                Developed collaboratively by Dry Cloud, Alex, and BalencedVeil717, our
+                bot is your companion for navigating the Venge.io market with ease.
+                <br/>
+                Whether you are new to the market or an experienced eye, our bot
+                simplifies your purchasing experience.
+            </p>
+        </div>
+        <div id="MarketNavigatorBot" class="card">
+            <h2>Market Navigator Bot</h2>
+            <p>
+                Explore the features and benefits that<br/>make this bot
+                indispensable for Venge.io players.
+            </p>
+        </div>
+    </main>
 
-<footer>
-    <div class="bot-icon-name">
-        <img
-                src="./assets/others/Icon.jpg"
-                alt="Market Navigator Bot"
-                class="circular-image"
-        />
-        <h1>Support</h1>
-    </div>
-    <ul class="links-container">
-        <li>
-            <a href="https://discord.gg/4D4nuehdqh" target="_blank"
-            >Support Server</a
-            >
-        </li>
-        <li>
-            <a href="https://discord.gg/4D4nuehdqh" target="_blank"
-            >Community Server</a
-            >
-        </li>
-        <li><a href="./legal/tos.html">Terms of Service</a></li>
-        <li><a href="./legal/privacy.html">Privacy Policy</a></li>
-        <li><a href="./legal/coc.html">Code of Conduct</a></li>
-    </ul>
-</footer>
+    <!-- ----------------B O T T O M--P A R T---------------- -->
+
+    <footer class="footer">
+        <div class="footer__brand">
+            <img
+                    src="./assets/others/Icon.jpg"
+                    alt="Market Navigator Bot"
+                    class="footer__brand-image"
+            />
+            <h1>Support</h1>
+        </div>
+        <ul class="footer__links">
+            <li class="footer__link-item">
+                <a class="footer__link" href="https://discord.gg/4D4nuehdqh" target="_blank"
+                >Support Server</a>
+            </li>
+            <li class="footer__link-item">
+                <a class="footer__link" href="https://discord.gg/4D4nuehdqh" target="_blank"
+                >Community Server</a>
+
+            </li>
+            <li class="footer__link-item"><a class="footer__link" href="./legal/tos.html">Terms of Service</a></li>
+            <li class="footer__link-item"><a class="footer__link" href="./legal/privacy.html">Privacy Policy</a></li>
+            <li class="footer__link-item"><a class="footer__link" href="./legal/coc.html">Code of Conduct</a></li>
+        </ul>
+    </footer>
+</div>
 <script src="./scripts/script.js"></script>
 </body>
 </html>

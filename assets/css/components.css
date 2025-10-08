@@ -1,0 +1,40 @@
+.button {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: min-content;
+    padding: 0.6rem;
+    border-radius: 10px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    overflow: hidden;
+    white-space: nowrap;
+    transition: box-shadow 0.3s ease;
+}
+
+.button--primary {
+    color: black !important;
+    background-color: aliceblue !important;
+}
+
+/* Keep visited links consistent (prevents browser from changing color after click) */
+.button--primary:visited {
+    color: black !important;
+    background-color: aliceblue !important;
+}
+
+.button--primary:hover {
+    box-shadow: 0 0 20px 1px rgb(255, 255, 255);
+}
+
+.card {
+    flex: 1 1 320px;
+    max-width: 400px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
