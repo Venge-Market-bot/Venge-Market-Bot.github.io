@@ -1,8 +1,7 @@
-@import url('./fonts.css');
-@import url('./base.css');
-@import url('./layout.css');
-@import url('./components.css');
-
+@import url('fonts.css');
+@import url('base.css');
+@import url('layout.css');
+@import url('components.css');
 
 
 /* ----------------- SHARED SECTION STYLES ----------------- */
@@ -10,7 +9,6 @@
 .main,
 .footer {
     width: 100%;
-    padding: 0 3%;
     border-radius: 17px;
     box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0);
     backdrop-filter: blur(10px);
@@ -24,6 +22,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 2%;
     font-family: "Poppins-Bold", monospace;
     font-weight: bold;
     align-items: center;
@@ -41,7 +40,6 @@
     transition: transform 0.2s;
     justify-content: center;
 }
-
 
 
 /* ----------------- HEADER ----------------- */
@@ -63,10 +61,6 @@
     margin: 20px;
     background-color: rgba(49, 2, 53, 0.55);
     border: 3px solid rgb(245, 139, 224);
-}
-
-.header__nav-toggle {
-    display: none;
 }
 
 .nav-menu {
@@ -99,21 +93,20 @@
 }
 
 
-
 /* ----------------- MAIN ----------------- */
 .main {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 25px;
     padding: 2%;
-    /*flex-direction: column;*/
     font-family: "Exo 2", monospace;
-    /*flex-grow: 1;*/
     width: 100%;
+    flex-grow: 1;
+    color: aliceblue;
 }
-
 
 
 /* ----------------- FOOTER ----------------- */

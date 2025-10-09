@@ -16,15 +16,9 @@
             href="./assets/others/favicon.png"
             type="image/x-icon"
     />
-    <!-- <link rel="stylesheet" href="./styles/css/top-part.css" />
-    <link rel="stylesheet" href="./styles/css/center-part.css" />
-    <link rel="stylesheet" href="./styles/css/bottom-part.css" />
-    <link rel="stylesheet" href="./styles/css/animations.css" />
-    <link rel="stylesheet" href="./styles/css/responsive.css" />
-    <link rel="stylesheet" href="./styles/css/style.css" />
-    <link rel="stylesheet" href="./styles/css/mobile-layout.css" /> -->
     <meta name="color-scheme" content="light">
-    <link rel="stylesheet" href="./assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/css/home/main.css"/>
+    <link rel="stylesheet" href="assets/css/team.css">
 </head>
 
 <body class="page-body">
@@ -44,19 +38,19 @@
         <!-- <button class="header__nav-toggle">☰</button> -->
         <ul class="nav-menu header__nav-menu">
             <li class="nav-menu__item">
-                <a class="nav-menu__link" href="./index.html"> About</a>
+                <a class="nav-menu__link" href="#about"> About</a>
             </li>
             <li class="nav-menu__item">
-                <a class="nav-menu__link" href="./pages/features.html"> Features</a>
+                <a class="nav-menu__link" href="#features"> Features</a>
             </li>
             <li class="nav-menu__item">
-                <a class="nav-menu__link" href="./pages/contact.html"> Contact</a>
+                <a class="nav-menu__link" href="#contact"> Contact</a>
             </li>
             <li class="nav-menu__item">
-                <a class="nav-menu__link" href="./pages/team.html"> Team</a>
+                <a class="nav-menu__link" href="#team"> Team</a>
             </li>
             <li class="nav-menu__item">
-                <a class="nav-menu__link" href="./pages/status.html"> Status</a>
+                <a class="nav-menu__link" href="#status"> Status</a>
             </li>
         </ul>
         <a class="button button--primary header__cta"
@@ -65,50 +59,147 @@
             Add Bot</a>
     </header>
 
-    <!-- ----------------C E N T E R--P A R T---------------- -->
-    <main class="main">
-        <div id="ServerJoinNews" class="card card--transparent">
-            <h2>Add Bot</h2>
-            <p>
-                The Market Bot is added to the official Venge server and many other
-                servers. The project started on 03/05/2024 and was added to Venge on
-                14/05/2024. Add the bot by clicking the button below!
-            </p>
-            <a
-                    class="btn"
-                    href="https://discord.com/oauth2/authorize?client_id=1220812690943901766&permissions=1015760145472&scope=bot"
-                    target="_blank"
-            >
-                <strong>ADD BOT</strong>
-                <div id="container-stars">
-                    <div id="stars"></div>
+    <!-- ----------------ABOUT--PART---------------- -->
+    <section class="main" id="about">
+        <h2 class="heading">ABOUT</h2>
+        <section class="card-container">
+            <div id="ServerJoinNews" class="card card--transparent">
+                <h2>✉️ Add Bot</h2>
+                <p>
+                    Ready to simplify your Venge.io trading? Our bot is officially recognized and trusted on the Venge
+                    server. Add it to your server with a single click to get started!
+                </p>
+                <a
+                        class="btn"
+                        href="https://discord.com/oauth2/authorize?client_id=1220812690943901766&permissions=1015760145472&scope=bot"
+                        target="_blank"
+                >
+                    <strong>ADD BOT</strong>
+                    <div id="container-stars">
+                        <div id="stars"></div>
+                    </div>
+                    <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </a>
+            </div>
+            <div id="home" class="card">
+                <h2>👋 Welcome</h2>
+                <p>
+                    Built for Venge.io enthusiasts, Market Navigator is your essential tool for mastering the market.
+                    Whether you're a new trader or a seasoned pro, our bot streamlines your experience for faster and
+                    smarter purchasing.
+                </p>
+            </div>
+            <div id="MarketNavigatorBot" class="card">
+                <h2>👾 Market Navigator Bot</h2>
+                <p>
+                    Unlock powerful features designed to give you an edge. Explore real-time price tracking, instant item
+                    alerts, and a simplified purchasing interface. See why Market Navigator is the indispensable tool for
+                    Venge.io players.
+                </p>
+            </div>
+            <div id="Notice" class="card">
+                <h2>🔔 Important Notice (v1.8.3)</h2>
+                <p>
+                    After a successful development journey, the Market Navigator Bot is now in its final, stable version. We are no longer developing new features, but the bot will remain fully operational for the community with continued maintenance as needed.
+                </p>
+            </div>
+        </section>
+    </section>
+
+
+    <section class="main" id="features">
+
+    </section>
+
+    <section class="main" id="contact">
+
+    </section>
+
+    <!-- ----------------ABOUT--PART---------------- -->
+    <section class="main"  id="team">
+        <section class="section team">
+            <h2 class="heading">TEAM</h2>
+            <div class="profile-container">
+                <div class="profile-box">
+                    <div class="profile-image">
+                        <img src="./assets/images/team/cloud.png" alt="Profile 1">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">Dry Cloud</p>
+                        <p class="profile-position">Admin<br>Founder|Owner</p>
+                    </div>
                 </div>
-                <div id="glow">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
+                <div class="profile-box">
+                    <div class="profile-image">
+                        <img src="./assets/images/team/balenced.jpeg" alt="Profile 2">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">BalencedVeil717</p>
+                        <p class="profile-position">Admin<br>Founder|Developer</p>
+                    </div>
                 </div>
-            </a>
-        </div>
-        <div id="home" class="card">
-            <h2>Welcome</h2>
-            <p>
-                Welcome to Market Navigator Bot! Designed exclusively for Venge.io
-                enthusiasts!<br/>
-                Developed collaboratively by Dry Cloud, Alex, and BalencedVeil717, our
-                bot is your companion for navigating the Venge.io market with ease.
-                <br/>
-                Whether you are new to the market or an experienced eye, our bot
-                simplifies your purchasing experience.
-            </p>
-        </div>
-        <div id="MarketNavigatorBot" class="card">
-            <h2>Market Navigator Bot</h2>
-            <p>
-                Explore the features and benefits that<br/>make this bot
-                indispensable for Venge.io players.
-            </p>
-        </div>
-    </main>
+                <div class="profile-box">
+                    <div class="profile-image">
+                        <img src="./assets/images/team/alex.png" alt="Profile 3">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">Alex</p>
+                        <p class="profile-position">Admin<br>Founder|Developer</p>
+                    </div>
+                </div>
+                <div class="profile-box">
+                    <div class="profile-image">
+                        <img src="./assets/images/team/yassine.png" alt="Profile 5">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">Yassine</p>
+                        <p class="profile-position">Member<br>Bot Tester</p>
+                    </div>
+                </div>
+                <div class="profile-box">
+                    <div class="profile-image">
+                        <img src="./assets/images/team/killxking.jpeg" alt="Profile 6">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">KILLXKING</p>
+                        <p class="profile-position">Member<br>Site Tester</p>
+                    </div>
+                </div>
+                <div class="profile-box">
+                    <div class="profile-image">
+                        <img src="./assets/images/team/bowser.jpeg" alt="Profile 7">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">Mr.Bowser</p>
+                        <p class="profile-position">Member<br>Site Tester</p>
+                    </div>
+                </div>
+                <div class="profile-box">
+                    <div class="profile-image">
+                        <img src="./assets/images/team/isomerism.png" alt="Profile 8">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">Isomerism</p>
+                        <p class="profile-position">Moderator<br>Site Tester</p>
+                    </div>
+                </div>
+                <div class="profile-box">
+                    <div class="profile-image">
+                        <img src="./assets/images/team/xantic.jpeg" alt="Profile 9">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">Xantic</p>
+                        <p class="profile-position">Moderator<br>Site Tester</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="main" id="status"></section>
 
     <!-- ----------------B O T T O M--P A R T---------------- -->
 
@@ -119,7 +210,6 @@
                     alt="Market Navigator Bot"
                     class="footer__brand-image"
             />
-            <h1>Support</h1>
         </div>
         <ul class="footer__links">
             <li class="footer__link-item">

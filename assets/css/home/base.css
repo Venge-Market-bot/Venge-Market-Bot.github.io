@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .page-body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url("../images/backgrounds/background.jpg");
+    background-image: url("../../images/backgrounds/background.jpg");
     background-color: #4d43ab;
     background-size: cover;
     background-position: center;
