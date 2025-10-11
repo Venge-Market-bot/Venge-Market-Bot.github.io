@@ -1,0 +1,124 @@
+@import url('fonts.css');
+@import url('base.css');
+@import url('layout.css');
+@import url('components.css');
+
+
+/* ----------------- SHARED SECTION STYLES ----------------- */
+.header,
+.main,
+.footer {
+    width: 100%;
+    border-radius: 17px;
+    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    background-color: rgba(49, 2, 53, 0.55);
+    border: 3px solid rgb(246, 52, 240);
+    cursor: default;
+}
+
+.header,
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2%;
+    font-family: "Poppins-Bold", monospace;
+    font-weight: bold;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: min-content;
+}
+
+.nav-menu__link,
+.footer__link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+    justify-content: center;
+}
+
+
+/* ----------------- HEADER ----------------- */
+.header__brand,
+.footer__brand {
+    color: white;
+    font-family: "Mozilla Headline", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__brand-image,
+.footer__brand-image {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px;
+    background-color: rgba(49, 2, 53, 0.55);
+    border: 3px solid rgb(245, 139, 224);
+}
+
+.nav-menu {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-content: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: 100%;
+    font-family: "RussoOne", monospace;
+}
+
+.nav-menu__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    padding: 1%;
+}
+
+.nav-menu__link {
+    transition: transform 0.2s;
+}
+
+.nav-menu__link:hover {
+    transform: scale(1.3) translateY(-5px) translateX(-5px);
+    text-shadow: 4px 7px rgba(22, 21, 21, 0.586);
+}
+
+
+/* ----------------- MAIN ----------------- */
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    padding: 2%;
+    font-family: "Exo 2", monospace;
+    width: 100%;
+    flex-grow: 1;
+    color: aliceblue;
+}
+
+
+/* ----------------- FOOTER ----------------- */
+.footer__links {
+    list-style-type: none;
+    flex: 1;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__link-item {
+}

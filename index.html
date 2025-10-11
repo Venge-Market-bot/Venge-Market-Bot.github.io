@@ -1,177 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Market Navigator Bot</title>
-    <meta property="og:title" content="Market Navigator Bot" />
+    <meta property="og:title" content="Market Navigator Bot"/>
     <meta
-      name="description"
-      content="Your companion for navigating the Venge.io market with ease directly from discord.
+            name="description"
+            content="Your companion for navigating the Venge.io market with ease directly from discord.
       Whether you are new to market or an experienced eye, our bot simplifies your purchasing experience."
     />
-    <meta name="next-head-count" content="8" />
+    <meta name="next-head-count" content="8"/>
     <link
-      rel="shortcut icon"
-      href="./assets/others/favicon.png"
-      type="image/x-icon"
+            rel="shortcut icon"
+            href="./assets/others/favicon.png"
+            type="image/x-icon"
     />
-    <link rel="stylesheet" href="./styles/css/top-part.css" />
-    <link rel="stylesheet" href="./styles/css/center-part.css" />
-    <link rel="stylesheet" href="./styles/css/bottom-part.css" />
-    <link rel="stylesheet" href="./styles/css/animations.css" />
-    <link rel="stylesheet" href="./styles/css/responsive.css" />
-    <link rel="stylesheet" href="./styles/css/style.css" />
-    <link rel="stylesheet" href="./styles/css/mobile-layout.css" />
-  </head>
-  <body>
-    <!-- ----------------T O P--P A R t---------------- -->
+    <meta name="color-scheme" content="light">
+    <link rel="stylesheet" href="assets/css/home/main.css"/>
+    <link rel="stylesheet" href="assets/css/team.css">
+</head>
 
-    <header>
-      <div class="bot-icon-name">
-        <img
-          src="./assets/others/Icon.jpg"
-          alt="Market Navigator Bot"
-          class="circular-image"
-        />
-        <h1>Market Navigator Bot</h1>
-      </div>
+<body class="page-body">
+<!-- ----------------T O P--P A R T---------------- -->
 
-      <button class="nav-toggle">☰</button>
-      <nav>
-        <ul class="nav-menu">
-          <li>
-            <a href="./index.html"
-              ><img
-                src="./assets/images/icons/about-icon.jpg"
-                alt="About Icon"
-                class="icon"
-              />
-              About</a
-            >
-          </li>
-          <li>
-            <a href="./pages/features.html"
-              ><img
-                src="./assets/images/icons/features-icon.jpg"
-                alt="Features Icon"
-                class="icon"
-              />
-              Features</a
-            >
-          </li>
-          <li>
-            <a href="./pages/contact.html"
-              ><img
-                src="./assets/images/icons/contact-icon.jpg"
-                alt="Contact Icon"
-                class="icon"
-              />
-              Contact</a
-            >
-          </li>
-          <li>
-            <a href="./pages/team.html"
-              ><img
-                src="./assets/images/icons/developers-icon.jpg"
-                alt="Developers Icon"
-                class="icon"
-              />
-              Team</a
-            >
-          </li>
-          <li>
-            <a href="./pages/status.html"
-              ><img
-                src="./assets/images/icons/status-icon.jpg"
-                alt="Status Icon"
-                class="icon"
-              />
-              Status</a
-            >
-          </li>
-          <li class="add-bot-btn">
-            <a
-              href="https://discord.com/oauth2/authorize?client_id=1220812690943901766&permissions=1015760145472&scope=bot"
-            >
-              Add Bot</a
-            >
-          </li>
+<div class="page">
+    <header class="header">
+        <div class="header__brand">
+            <img
+                    src="./assets/others/Icon.jpg"
+                    alt="Market Navigator Bot"
+                    class="header__brand-image"
+            />
+            <h1>Market Navigator Bot</h1>
+        </div>
+
+        <!-- <button class="header__nav-toggle">☰</button> -->
+        <ul class="nav-menu header__nav-menu">
+            <li class="nav-menu__item">
+                <a class="nav-menu__link" href="#about"> About</a>
+            </li>
+            <li class="nav-menu__item">
+                <a class="nav-menu__link" href="#features"> Features</a>
+            </li>
+            <li class="nav-menu__item">
+                <a class="nav-menu__link" href="#contact"> Contact</a>
+            </li>
+            <li class="nav-menu__item">
+                <a class="nav-menu__link" href="#team"> Team</a>
+            </li>
         </ul>
-      </nav>
+        <a class="button button--primary header__cta"
+           href="https://discord.com/oauth2/authorize?client_id=1220812690943901766&permissions=1015760145472&scope=bot"
+        >
+            Add Bot</a>
     </header>
 
-    <!-- ----------------C E N T E R--P A R T---------------- -->
+    <!-- ----------------ABOUT--PART---------------- -->
+    <section class="main" id="about">
+        <h2 class="heading">ABOUT</h2>
+        <section class="card-container">
+            <div id="ServerJoinNews" class="card card--transparent">
+                <h2>✉️ Add Bot</h2>
+                <p>
+                    Ready to simplify your Venge.io trading? Our bot is officially recognized and trusted on the Venge
+                    server. Add it to your server with a single click to get started!
+                </p>
+                <a
+                        class="btn"
+                        href="https://discord.com/oauth2/authorize?client_id=1220812690943901766&permissions=1015760145472&scope=bot"
+                        target="_blank"
+                >
+                    <strong>ADD BOT</strong>
+                    <div id="container-stars">
+                        <div id="stars"></div>
+                    </div>
+                    <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </a>
+            </div>
+            <div id="home" class="card">
+                <h2>👋 Welcome</h2>
+                <p>
+                    Built for Venge.io enthusiasts, Market Navigator is your essential tool for mastering the market.
+                    Whether you're a new trader or a seasoned pro, our bot streamlines your experience for faster and
+                    smarter purchasing.
+                </p>
+            </div>
+            <div id="MarketNavigatorBot" class="card">
+                <h2>👾 Market Navigator Bot</h2>
+                <p>
+                    Unlock powerful features designed to give you an edge. Explore real-time price tracking, instant
+                    item
+                    alerts, and a simplified purchasing interface. See why Market Navigator is the indispensable tool
+                    for
+                    Venge.io players.
+                </p>
+            </div>
+        </section>
+    </section>
 
-    <main>
-      <section id="home" class="curved-box">
-        <h2>Welcome</h2>
-        <p>
-          Welcome to Market Navigator Bot! Designed exclusively for Venge.io
-          enthusiasts!<br />
-          Developed collaboratively by Dry Cloud, Alex, and BalencedVeil717, our
-          bot is your companion for navigating the Venge.io market with ease.
-          <br />
-          Whether you are new to market or an experienced eye, our bot
-          simplifies your purchasing experience.
-        </p>
-      </section>
-      <section id="MarketNavigatorBot" class="curved-box">
-        <h2>Market Navigator Bot</h2>
-        <p>
-          Explore the features and benefits that<br />make this bot
-          indispensable for Venge.io players.
-        </p>
-      </section>
-    </main>
-    <div class="transparent-box">
-      <p>
-        The Market Bot is added to the official Venge server and many other
-        servers. The project started on 03/05/2024, and was added to Venge on
-        14/05/2024. Add the bot by clicking the button below!
-      </p>
-      <a
-        class="btn"
-        href="https://discord.com/oauth2/authorize?client_id=1220812690943901766&permissions=1015760145472&scope=bot"
-        target="_blank"
-      >
-        <strong>ADD BOT</strong>
-        <div id="container-stars">
-          <div id="stars"></div>
-        </div>
-        <div id="glow">
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </a>
-    </div>
+
+    <!-- ----------------FEATURES--PART---------------- -->
+    <section class="main" id="features">
+        <h2 class="heading">FEATURES</h2>
+        <section class="card-container">
+            <div id="market-search" class="card">
+                <h2>🔍 Market Search</h2>
+                <p>
+                    Instantly browse and search for skins directly from the Venge.io market. Use
+                    <code>/search_market</code> to find
+                    immediate listings and current prices.
+                </p>
+            </div>
+            <div id="price-trends" class="card">
+                <h2>📈 Price Trends</h2>
+                <p>
+                    Gain a strategic edge. Analyze real-time market price trends with detailed graphs and data, all
+                    provided by the <code>/market-trend</code> command.
+                </p>
+            </div>
+            <div id="skin-cards" class="card">
+                <h2>🖼️ Skin Cards</h2>
+                <p>
+                    Create and share visually stunning, detailed information cards for any skin. Simply use <code>/skin_info</code>
+                    to generate and showcase item details.
+                </p>
+            </div>
+            <div id="wishlist-system" class="card">
+                <h2>⭐ Wishlist System</h2>
+                <p>
+                    Never miss a favorite item. Track desired skins and get instant notifications when they become
+                    available. Manage your list with <code>/wishlist_add</code>, <code>/wishlist_list</code>, and <code>/wishlist_remove</code>.
+                </p>
+            </div>
+            <div id="snipe-system" class="card">
+                <h2>🎯 Snipe System</h2>
+                <p>
+                    Set up powerful snipe triggers to monitor market deals based on your custom filters. Use <code>/snipe_add</code>,
+                    <code>/snipe_list</code>, and <code>/snipe_remove</code> to manage your alerts.
+                </p>
+            </div>
+            <div id="seltrak-system" class="card">
+                <h2>🛰️ SelTrak System</h2>
+                <p>
+                    Monitor specific users and receive real-time alerts when they list new skins. Set up and manage
+                    tracking modules with <code>/seltrak_add</code>, <code>/seltrak_list</code>, and <code>/seltrak_remove</code>.
+                </p>
+            </div>
+            <div id="clan-analytics" class="card">
+                <h2>🛡️ Clan Analytics</h2>
+                <p>
+                    Access detailed stats and rankings for any clan. Use <code>/clan_info</code> for competitive
+                    insights or
+                    <code>/clan_submit</code> to add your own clan details.
+                </p>
+            </div>
+            <div id="inventory-viewer" class="card">
+                <h2>📦 Inventory Viewer</h2>
+                <p>
+                    View any user's complete inventory, including rare and event-exclusive skins. Utilize <code>/get-inventory</code>
+                    with powerful filters for specific items.
+                </p>
+            </div>
+            <div id="asset-browser" class="card">
+                <h2>📸 Asset Browser</h2>
+                <p>
+                    Explore and download high-quality assets for weapons and heroes. The <code>/get-assets</code>
+                    command provides
+                    detailed images for creators and enthusiasts.
+                </p>
+            </div>
+            <div id="utility-commands" class="card">
+                <h2>⚙️ Utility Commands</h2>
+                <p>
+                    Access additional helpful commands like <code>/ping</code> for bot status, <code>/about</code> for
+                    info, <code>/help</code> for guidance,
+                    and <code>/suggest</code> for feedback.
+                </p>
+            </div>
+        </section>
+    </section>
+
+    <!-- ----------------CONTACT--PART---------------- -->
+    <section class="main" id="contact">
+        <h2 class="heading">CONTACT</h2>
+        <section class="card-container">
+            <div class="card" id="status-notice">
+                <h2>🔔 Project Status: Active & Maintained</h2>
+                <p>
+                    <strong>Final Major Version:</strong> 1.8.3 (Released May 26, 2025)
+                    <br><br>
+                    Market Navigator has reached its final version. The bot remains fully operational with ongoing
+                    maintenance, though no new feature development is planned.
+                </p>
+            </div>
+            <div class="card">
+                <h2>🤝 Join the Community</h2>
+                <p>
+                    Our Discord server is the heart of the Market Navigator community. It's the fastest way to get
+                    support, report bugs, and chat with other Venge.io traders.
+                </p>
+                <a class="btn" href="https://discord.gg/AkPBdPDYkH" target="_blank">
+                    <strong>JOIN OUR DISCORD SERVER</strong>
+                </a>
+            </div>
+            <div class="card">
+                <h2>❔ Get Support</h2>
+                <p>
+                    Have a question about a command or need help getting started? Ask our friendly community and support
+                    staff in the <a href="https://discord.com/channels/1214971921049976872/1228638686405595157"
+                                    class="channel"><code>#📞┃support</code></a> channel on Discord.
+                </p>
+            </div>
+            <div class="card">
+                <h2>🐛 Report a Bug</h2>
+                <p>
+                    Spotted something that isn't working correctly or seems broken? Please provide all the details in
+                    our
+                    <a href="https://discord.com/channels/1214971921049976872/1228639848638971994"
+                       class="channel"><code>#🚨┃bug-report</code></a> channel so we can investigate it!
+                </p>
+            </div>
+            <div class="card">
+                <h2>💡 Have a Suggestion?</h2>
+                <p>
+                    Got a brilliant idea for a minor tweak or a quality-of-life improvement? Share the details with us
+                    and the community in our
+                    <a href="https://discord.com/channels/1214971921049976872/1228637719228583987" class="channel"><code>#💡┃suggestions</code></a>
+                    channel!
+                </p>
+            </div>
+            <div class="card">
+                <h2>💼 Formal Inquiries</h2>
+                <p>
+                    For partnerships or other formal matters, please contact one of the founding members directly on
+                    Discord:
+                    <br><br>
+                    <strong>Owner:</strong> <code>@x0xpluh</code> (Dry Cloud)
+                    <br>
+                    <strong>Developer:</strong> <code>@balencedveil717</code> (Mr. Balenced)
+                    <br>
+                    <strong>Developer:</strong> <code>@lts_alex</code> (! Alex)
+                </p>
+            </div>
+        </section>
+    </section>
+
+    <!-- ----------------ABOUT--PART---------------- -->
+    <section class="main" id="team">
+        <h2 class="heading">TEAM</h2>
+        <section class="card-container">
+            <div class="profile-container">
+                <div class="profile-box">
+                    <div class="profile-image">
+                        <img src="./assets/images/team/cloud.png" alt="Profile 1">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">Dry Cloud</p>
+                        <p class="profile-position">Admin<br>Founder|Owner</p>
+                    </div>
+                </div>
+                <div class="profile-box">
+                    <div class="profile-image">
+                        <img src="./assets/images/team/balenced.jpeg" alt="Profile 2">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">BalencedVeil717</p>
+                        <p class="profile-position">Admin<br>Founder|Developer</p>
+                    </div>
+                </div>
+                <div class="profile-box">
+                    <div class="profile-image">
+                        <img src="./assets/images/team/alex.png" alt="Profile 3">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">Alex</p>
+                        <p class="profile-position">Admin<br>Founder|Developer</p>
+                    </div>
+                </div>
+                <div class="profile-box">
+                    <div class="profile-image">
+                        <img src="./assets/images/team/yassine.png" alt="Profile 5">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">Yassine</p>
+                        <p class="profile-position">Member<br>Bot Tester</p>
+                    </div>
+                </div>
+                <div class="profile-box">
+                    <div class="profile-image">
+                        <img src="./assets/images/team/killxking.jpeg" alt="Profile 6">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">KILLXKING</p>
+                        <p class="profile-position">Member<br>Site Tester</p>
+                    </div>
+                </div>
+                <div class="profile-box">
+                    <div class="profile-image">
+                        <img src="./assets/images/team/bowser.jpeg" alt="Profile 7">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">Mr.Bowser</p>
+                        <p class="profile-position">Member<br>Site Tester</p>
+                    </div>
+                </div>
+                <div class="profile-box">
+                    <div class="profile-image">
+                        <img src="./assets/images/team/isomerism.png" alt="Profile 8">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">Isomerism</p>
+                        <p class="profile-position">Moderator<br>Site Tester</p>
+                    </div>
+                </div>
+                <div class="profile-box">
+                    <div class="profile-image">
+                        <img src="./assets/images/team/xantic.jpeg" alt="Profile 9">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">Xantic</p>
+                        <p class="profile-position">Moderator<br>Site Tester</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
 
     <!-- ----------------B O T T O M--P A R T---------------- -->
 
-    <footer class="bottom-part">
-      <div class="icon-container">
-        <img
-          src="./assets/others/Icon.jpg"
-          alt="Market Navigator Bot"
-          class="circular-image"
-        />
-      </div>
-      <ul class="links-container">
-        <li>
-          <a href="https://discord.gg/4D4nuehdqh" target="_blank"
-            >Support Server</a
-          >
-        </li>
-        <li>
-          <a href="https://discord.gg/4D4nuehdqh" target="_blank"
-            >Community Server</a
-          >
-        </li>
-        <li><a href="./legal/tos.html">Terms of Service</a></li>
-        <li><a href="./legal/privacy.html">Privacy Policy</a></li>
-        <li><a href="./legal/coc.html">Code of Conduct</a></li>
-      </ul>
+    <footer class="footer">
+        <div class="footer__brand">
+            <img
+                    src="./assets/others/Icon.jpg"
+                    alt="Market Navigator Bot"
+                    class="footer__brand-image"
+            />
+        </div>
+        <ul class="footer__links">
+            <li class="footer__link-item">
+                <a class="footer__link" href="https://discord.gg/4D4nuehdqh" target="_blank"
+                >Support Server</a>
+            </li>
+            <li class="footer__link-item">
+                <a class="footer__link" href="https://discord.gg/4D4nuehdqh" target="_blank"
+                >Community Server</a>
+
+            </li>
+            <li class="footer__link-item"><a class="footer__link" href="./legal/tos.html">Terms of Service</a></li>
+            <li class="footer__link-item"><a class="footer__link" href="./legal/privacy.html">Privacy Policy</a></li>
+            <li class="footer__link-item"><a class="footer__link" href="./legal/coc.html">Code of Conduct</a></li>
+        </ul>
     </footer>
-    <script src="./scripts/script.js"></script>
-  </body>
+</div>
+<script src="./scripts/script.js"></script>
+</body>
 </html>

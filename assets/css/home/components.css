@@ -1,0 +1,90 @@
+.button {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: min-content;
+    padding: 0.6rem;
+    border-radius: 10px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    overflow: hidden;
+    white-space: nowrap;
+    transition: box-shadow 0.3s ease;
+}
+
+.button--primary {
+    color: black !important;
+    background-color: aliceblue !important;
+}
+
+/* Keep visited links consistent (prevents browser from changing color after click) */
+.button--primary:visited {
+    color: black !important;
+    background-color: aliceblue !important;
+}
+
+.button--primary:hover {
+    box-shadow: 0 0 20px 1px rgb(255, 255, 255);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    padding: 5% 2%;
+    font-family: "Exo 2", monospace;
+}
+
+.card {
+    flex: 1 1 320px;
+    max-width: 400px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 17px;
+    display: flex;
+    color: aliceblue;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card > h2 {
+    font-family: 'Space Mono', Geneva, Tahoma, sans-serif;
+}
+
+.card > p {
+    font-family: 'Microsoft PhagsPa', monospace;
+    text-align: justify;
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.12);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    white-space: nowrap;
+    border-radius: 17px;
+    width: min-content;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+code {
+    background-color: rgba(0, 0, 0, 0.21); /* Discord's dark background color */
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+.channel {
+    text-decoration: none;
+    color: #a1c8e8;
+}

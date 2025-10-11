@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Betatron';
+    src: url('../../fonts/betatron-regular-webfont.woff2') format('woff2'),
+    url('../../fonts/betatron-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: url('../../fonts/exo2-webfont.woff2') format('woff2'),
+    url('../../fonts/exo2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inknut Antiqua';
+    src: url('../../fonts/inknutantiqua-webfont.woff2') format('woff2'),
+    url('../../fonts/inknutantiqua-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mozilla Headline';
+    src: url('../../fonts/mozillaheadline-webfont.woff2') format('woff2'),
+    url('../../fonts/mozillaheadline-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../fonts/poppins-bold-webfont.woff2') format('woff2'),
+    url('../../fonts/poppins-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Russo One';
+    src: url('../../fonts/russoone-regular-webfont.woff2') format('woff2'),
+    url('../../fonts/russoone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('../../fonts/spacemono-webfont.woff2') format('woff2'),
+    url('../../fonts/spacemono-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
