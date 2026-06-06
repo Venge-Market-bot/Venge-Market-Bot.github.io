@@ -1,0 +1,10 @@
+START
+    INPUT num
+    flag 1
+    IF (number < 2) : OUTPUT "Prime"
+    LOOP(i; 2 -> num) {
+        IF (num % i == 0) : flag = 0
+    }
+    IF (flag == 1) : OUTPUT "Prime"
+    ELSE : OUTPUT "Not Prime"
+END
